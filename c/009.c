@@ -24,18 +24,25 @@ int main()
         }
     }
     int max = (num + 1) / 2;
-
+    int number = a[num - 1][max - 1];
+    int x = 0;
+    while (number != 0)
+    {
+        number = number / 10;
+        x++;
+    }
+    x = x + 2;
     for (int m = 0; m < num; m++)
     {
         for (int n = 0; n <= m; n++)
         {
             if (n == m)
             {
-                printf("%4lld \n", a[m][n]);
+                printf("%*lld\n", x, a[m][n]);
             }
             else
             {
-                printf("%4lld ", a[m][n]);
+                printf("%*lld", x, a[m][n]);
             }
         }
     }
