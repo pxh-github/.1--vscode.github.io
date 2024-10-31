@@ -8,9 +8,7 @@ int main(void)
 {
     float value = -1;
     while (value != 0)
-        ;
     {
-        printf("Enter value of trade: ");
         scanf("%f", &value);
         float commission;
         if (value < 2500.00f)
