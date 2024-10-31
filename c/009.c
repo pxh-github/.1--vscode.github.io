@@ -23,17 +23,19 @@ int main()
             }
         }
     }
+    int max = (num + 1) / 2;
+
     for (int m = 0; m < num; m++)
     {
         for (int n = 0; n <= m; n++)
         {
             if (n == m)
             {
-                printf("%lld \n", a[m][n]);
+                printf("%4lld \n", a[m][n]);
             }
             else
             {
-                printf("%lld ", a[m][n]);
+                printf("%4lld ", a[m][n]);
             }
         }
     }
